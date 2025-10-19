@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom component styles for navbar (using Inter font) */
+@layer components {
+  .navbar-nav .nav-link {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.25em;           /* Slightly larger text */
+    font-weight: 400;            /* Normal weight */
+    color: #198754;              /* Bootstrap success green */
+    background-color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    margin: 0 0.2rem;
+  }
+
+  .navbar-nav .nav-link.active {
+    font-weight: 600;
+  }
+
+  .navbar-nav .dropdown-menu .dropdown-item {
+    font-family: 'Inter', sans-serif;
+    color: #198754;
+    background-color: white;
+  }
+
+  .navbar-nav .dropdown-menu .dropdown-item:hover {
+    background-color: #d1e7dd; /* Light green on hover */
+  }
+}
+
+

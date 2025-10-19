@@ -1,0 +1,32 @@
+<section id="skills" class="py-5 bg-white" style="font-family: 'Inter', sans-serif;">
+  <div class="container">
+    <h2 class="text-success text-center mb-5">Professional Skills</h2>
+
+    {{ $skills := site.Data.skills.main.skills }}
+    {{ $categories := slice }}
+
+    {{ range $skills }}
+      {{ if not (in $categories .category) }}
+        {{ $categories = $categories | append .category }}
+      {{ end }}
+    {{ end }}
+
+    {{ range $categories }}
+      <h3 class="text-green-700 mt-4 mb-3">{{ . }}</h3>
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 mb-4">
+        {{ range where $skills "category" . }}
+          <div class="col">
+            <div class="card h-100 shadow-sm border border-success-subtle">
+              <div class="card-body">
+                <h5 class="card-title text-success mb-1">{{ .name }}</h5>
+                <p class="card-subtitle text-muted small mb-2"><em>{{ .level }}</em></p>
+                <p class="card-text">{{ .blurb }}</p>
+              </div>
+            </div>
+          </div>
+        {{ end }}
+      </div>
+    {{ end }}
+  </div>
+</section>
+

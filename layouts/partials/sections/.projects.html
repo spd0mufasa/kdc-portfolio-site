@@ -1,0 +1,46 @@
+
+	
+<!-- old color: f8f9fa  / class="py-5 bg-light" / style="background-color: #e6f2ea"; -->
+<section id="projects" class="py-5 bg-light" style="font-family: 'Inter', sans-serif;">
+  <div class="container">
+    <h2 class="text-success mb-5 text-center">Highlighted Projects</h2>
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+      
+      {{ range site.Data.projects.list.projects }}
+      <div class="col">
+        <a href="{{ .url }}" class="text-decoration-none">
+          <div class="card h-100 shadow-sm border border-success-subtle">
+            <div class="card-img-top d-flex align-items-center justify-content-center" style="height: 180px; background-color: #f8f9fa; overflow: hidden;">
+              <img src="{{ .image }}" alt="{{ .title }}" style="max-height: 100%; max-width: 100%; object-fit: contain;">
+            </div>
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title text-success">{{ .title }}</h5>
+              <p class="card-text flex-grow-1">{{ .blurb }}</p>
+              <a href="{{ .url }}" class="btn btn-outline-success mt-3">More Info</a>
+            </div>
+          </div>
+        </a>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+
+</section>
+
+<!-- Upside-down divider -->
+<!-- 
+<div class="position-relative" style="margin-top: -5px;">
+  <svg viewBox="0 0 1440 80" xmlns="http://www.w3.org/2000/svg" style="display: block; transform: scaleY(-1);">
+    <path fill="#e6f2ea" d="M0,32L48,42.7C96,53,192,75,288,74.7C384,75,480,53,576,58.7C672,64,768,96,864,106.7C960,117,1056,107,1152,85.3C1248,64,1344,32,1392,16L1440,0V80H0Z" />
+  </svg>
+</div>
+-->
+
+<!-- Upside-down divider with slightly more pronounced waves -->
+<div class="position-relative" style="margin-top: -5px;">
+  <svg viewBox="0 0 1440 100" xmlns="http://www.w3.org/2000/svg" style="display: block; transform: scaleY(-1);">
+    <path fill="#f8f9fa" d="M0,40L60,50C120,60,240,80,360,80C480,80,600,60,720,70C840,80,960,110,1080,120C1200,130,1320,100,1380,80L1440,60V100H0Z" />
+  </svg>
+</div>
+
+class="py-5 bg-light"

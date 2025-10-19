@@ -1,29 +1,47 @@
-# Copyright Notice
-copyright: © 2020 Copyright.
+navBarTitle: "K. Clayborne"
 
-# A disclaimer notice for the footer. Make sure you have set "params.footer.disclaimer.enable: true" in your `config.yaml` file.
-disclaimer: "This theme is under MIT license. So, you can use it for non-commercial, commercial, or private uses.
-You can modify or distribute the theme without requiring any permission from the theme author.
-However, the theme author does not provide any warranty or takes any liability for any issue with the theme."
-
-# Meta description for your site.  This will help the search engines to find your site.
-description: Portfolio and personal blog of John Doe.
-
-# specify the list of custom menus that you want to show in the top navbar.
-# they will be separated by a divider from the main menus.
 customMenus:
-- name: Docs
-  url: https://toha-guides.netlify.app/posts/
-  # specify whether to hide the menu item from top navbar or not.
-  hideFromNavbar: false
-  # specify whether to show the menu item in footer or not.
-  # if you set it to true, make sure you have set `footer.navigation.customMenus: true` in your config.yaml
-  showOnFooter: false
+  - name: "Home"
+    url: "/"
+    weight: 1
+  - name: "About"
+    url: "/#about"
+    weight: 2
+  - name: "Skills"
+    url: "/#skills"
+    weight: 3
+  - name: "Experience"
+    url: "/#experiences"
+    weight: 4
+  - name: "Resume"
+    identifier: "resume"
+    url: "#"
+    weight: 5
+    children:
+      - name: "Back-End Developer"
+        url: "/resume/backend-developer/"
+        weight: 1
+      - name: "Database Administrator"
+        url: "/resume/database-admin/"
+        weight: 2
+      - name: "API Developer"
+        url: "/resume/api-developer/"
+        weight: 3
+      - name: "ETL Developer"
+        url: "/resume/etl-developer/"
+        weight: 4
+  - name: "Projects"
+    identifier: "projects"
+    url: "#"
+    weight: 6
+    children:
+      - name: "AI Development"
+        url: "/projects/ai-development/"
+        weight: 1
+      - name: "CRUD Generator"
+        url: "/projects/crud-generator/"
+        weight: 2
+      - name: "Fast API Authorizations"
+        url: "/projects/fastapi-auth/"
+        weight: 3
 
-# Specify OpenGraph Headers
-openGraph:
-  title: John's Blog
-  type: website
-  description: Portfolio and personal blog of John Doe.
-  image: images/author/john.png
-  url: https://hugo-toha.github.io

@@ -1,0 +1,108 @@
+skills:
+- name: Python
+  level: Expert
+  blurb: Extensive use in backend APIs, FastAPI, data processing, and automation.
+  category: Backend Development
+  detail:
+- name: FastAPI
+  level: Expert
+  blurb: Used for designing multilingual CRUD API endpoints with production deployments.
+  category: Backend Development
+  detail:
+- name: Docker
+  level: Expert
+  blurb: Built and deployed containerized applications; managed volumes and Oracle
+    DB integration.
+  category: DevOps
+  detail:
+- name: GitLab
+  level: Expert
+  blurb: Managed DEV/TEST/PROD environments and CI/CD pipelines with GitLab Runner.
+  category: DevOps
+  detail:
+- name: Oracle
+  level: Expert
+  blurb: Used extensively with SAP BW, backend development, performance tuning, and
+    data migration.
+  category: Database
+  detail:
+- name: PostgreSQL
+  level: Proficient
+  blurb: Handled data storage for REST APIs and development/testing environments.
+  category: Database
+  detail:
+- name: Jenkins
+  level: Proficient
+  blurb: Automated Docker image builds and deployments across staging environments.
+  category: DevOps
+  detail:
+- name: AWS S3
+  level: Proficient
+  blurb: Used for encrypted backup storage of GitLab and application data.
+  category: Cloud Technologies
+  detail:
+- name: NEXT.JS 
+  level: Intermediate
+  blurb: Used alongside backend services in full-stack prototypes with generative
+    AI integrations.
+  category: Frontend Development
+  detail:
+- name: Flask
+  level: Intermediate
+  blurb: Deployed lightweight TradingView alert services for crypto automation.
+  category: Backend Development
+  detail:
+- name: Git
+  level: Expert
+  blurb: Version control across numerous solo and team projects, integrated with GitLab.
+  category: Version Control
+  detail:
+- name: Shell Scripting
+  level: Expert
+  blurb: Automated tasks, log rotations, environment setups, and backups.
+  category: System Administration
+  detail:
+- name: SQL
+  level: Expert
+  blurb: Heavy use in data extraction, migration, and optimization across multiple
+    DB engines.
+  category: Database
+  detail:
+- name: SAP BW
+  level: Expert
+  blurb: Core contributor on the development team; performance tuning and data integration.
+  category: Data Warehousing
+  detail:
+- name: Linux
+  level: Expert
+  blurb: Primary development and deployment environment, including remote servers
+    and Docker hosts.
+  category: Operating Systems
+  detail:
+- name: CI/CD
+  level: Proficient
+  blurb: Built pipelines for DEV, TEST, STAGE, and PROD releases using GitLab and
+    Jenkins.
+  category: DevOps
+  detail:
+- name: TradingView
+  level: Proficient
+  blurb: Integrated webhook alerts for automated trading logic with Binance and Coinbase.
+  category: Data Analysis
+  detail:
+- name: SQLAlchemy
+  level: Proficient
+  blurb: Used in custom ORM layer for backend APIs and schema mapping.
+  category: Database
+  detail:
+- name: Jupyter
+  level: Intermediate
+  blurb: Used for data analysis and testing of algorithms and trading signals.
+  category: Data Analysis
+  detail:
+- name: Hypercorn
+  level: Intermediate
+  blurb: Used for production-grade ASGI serving of FastAPI apps.
+  category: Backend Development
+  detail: Hypercorn was used as one of the parameters to start the system -meant to be accessed for a production system
+

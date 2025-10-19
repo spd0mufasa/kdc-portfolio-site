@@ -1,0 +1,5 @@
+Notes:
+
+Ensure your SVG icons are stored in static/icons/skills/ and named in lowercase (e.g., python.svg).
+
+The with statement checks if the icon exists; if not, it displays a placeholder with the first letter of the skill.

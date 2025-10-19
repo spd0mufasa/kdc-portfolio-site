@@ -1,0 +1,47 @@
+✅NOTES HOW TO START FROM DOCKER
+myadmin@kdcio:~/toha-gamma/my-portfolio$ docker run --rm -p 1313:1313   -v /home/myadmin/toha-gamma/my-portfolio:/src   -w /src   klakegg/hugo:ext-debian   server -D --disableFastRender --bind 0.0.0.0 --baseURL http://207.148.0.99:1313
+
+WHERE TO GET TAGS: https://hub.docker.com/r/klakegg/hugo
+
+
+✅NOTES STARTING FROM AN INSTALLATION ON VULTR SYSTEM - CLEAN SYSTEM BEFORE STARTING:
+myadmin@kdcio:~/toha-gamma/my-portfolio$ rm -rf resources/  public/
+myadmin@kdcio:~/toha-gamma/my-portfolio$ hugo mod clean
+myadmin@kdcio:~/toha-gamma/my-portfolio$ hugo server -D --disableFastRender --cleanDestinationDir -p 1313 --bind 0.0.0.0 --baseURL http://207.148.0.99:1313
+
+
+hugo server -D --disableFastRender --cleanDestinationDir -p 1313 --bind 0.0.0.0 --baseURL http://207.148.0.99:1313
+
+
+! --------------------------------------------------------------------------------------------
+! IMPORTANT!!!!!
+! --------------------------------------------------------------------------------------------
+✅NOTES   NEVER RUN "npx"Fix #2: Ensure postcss-cli is not interfering
+You're using Hugo’s built-in postCSS function, which is correct.
+You don’t need to manually run:
+
+bash
+Copy
+npx postcss assets/css/main.css -o static/css/main.css
+If you do run that, it can override the styles with an older or stripped-down version.
+! --------------------------------------------------------------------------------------------
+
+
+✅NOTES 
+1.2em = ~19.2px (based on 16px default). This is a good starting size.
+
+You can go up in small steps: 1.25em, 1.3em, etc.
+
+font-weight: 400 is the default for Inter and looks clean. Lower weights like 300 are lighter, but may be too faint for navs.
+
+Use !important cautiously — you're using Bootstrap, so it's fine here to override default classes.
+
+
+
+✅NOTES AUTO REBUILD FOR DEVELOPMENT
+ON: npx postcss assets/css/main.css -o static/css/main.css --watch
+
+
+OFF: 	You simply do:
+	✅ Press Ctrl + C
+	That will terminate the watch process and return control to your terminal.

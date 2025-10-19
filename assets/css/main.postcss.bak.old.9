@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom styles to override Bootstrap for the navigation menu */
+.navbar-nav .nav-link {
+  font-family: 'Inter', sans-serif !important;
+  font-size: 1.25em !important;       /* Slightly larger text */
+  font-weight: 400 !important;       /* Normal weight (less bold) */
+  color: #198754 !important;         /* Bootstrap's "success" green */
+  background-color: white !important;
+  padding: 0.5rem 1rem !important;
+  border-radius: 0.25rem !important;
+  margin: 0 0.2rem !important;
+}
+
+.navbar-nav .nav-link.active {
+  font-weight: 600 !important;
+}
+
+.navbar-nav .dropdown-menu .dropdown-item {
+  font-family: 'Inter', sans-serif !important;
+  color: #198754 !important;
+  background-color: white !important;
+}
+
+.navbar-nav .dropdown-menu .dropdown-item:hover {
+  background-color: #d1e7dd !important; /* lighter green on hover */
+}
+

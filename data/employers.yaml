@@ -1,0 +1,13 @@
+employers:
+  - name: NASA
+    logo: nasa.webp
+  - name: SAP
+    logo: sap.svg
+  - name: Lockheed Martin
+    logo: lockheed.jpg
+  - name: Accenture
+    logo: accenture.png
+  - name: Oracle
+    logo: oracle1.jpg
+
+

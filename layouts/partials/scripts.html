@@ -1,0 +1,57 @@
+{{ partial "helpers/script-bundle.html" }}
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<style>
+  #typed-text {
+    opacity: 0;
+    transition: opacity 2s ease-in-out; /* Adjust duration as needed */
+  }
+  #typed-text.fading-in {
+    opacity: 1;
+  }
+
+  #typed-text {
+    opacity: 0;
+    color: red; /* Set the text color to red */
+    transition: opacity 1s ease-in-out; /* Adjust duration as needed */
+  }
+  #typed-text.fading-in {
+    opacity: 1;
+  }
+</style>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const texts = ["a Backend Developer", "an API Developer", "an AI Ethusiast", "a PostgreSQL DBA", "a Software Developer", "an Oracle DBA"];
+    const el = document.getElementById("typed-text");
+    const fadeDuration = 2500; // Duration of the fade effect in milliseconds
+    const delayBetween = 3000; // Delay before the next text fades in
+
+    let textIndex = 0;
+
+    function changeText() {
+      if (el) {
+        // Fade out the current text
+        el.classList.remove("fading-in");
+        setTimeout(() => {
+          // Update the text
+          el.textContent = texts[textIndex];
+          // Fade in the new text
+          el.classList.add("fading-in");
+          // Move to the next text in the array
+          textIndex = (textIndex + 1) % texts.length;
+          // Set the timeout for the next change
+          setTimeout(changeText, delayBetween);
+        }, fadeDuration / 2); // Wait for half the fade duration before changing text
+      }
+    }
+
+    if (el) {
+      // Initial fade-in of the first text
+      el.textContent = texts[0];
+      el.classList.add("fading-in");
+      setTimeout(changeText, delayBetween);
+    }
+  });
+</script>

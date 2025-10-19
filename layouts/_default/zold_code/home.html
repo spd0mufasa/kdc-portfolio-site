@@ -1,0 +1,31 @@
+{{ define "main" }}
+
+  {{ partial "sections/home.html" . }}
+
+  {{ partial "sections/projects.html" . }}
+
+  {{ if site.Params.features.skills.enable }}
+     {{ partial "sections/skills.html" . }}
+  {{ end }}
+
+  {{ if site.Params.features.experiences.enable }}
+    {{ partial "sections/experiences.html" . }}
+  {{ end }}
+
+  {{ if site.Params.features.education.enable }}
+    {{ partial "sections/education.html" . }}
+  {{ end }}
+
+  {{ if site.Params.features.about.enable }}
+    {{ partial "sections/about.html" . }}
+  {{ end }}
+
+  {{ if site.Params.features.featuredPosts.enable }}
+    {{ partial "sections/featured-posts.html" . }}
+  {{ end }}
+
+
+
+  {{ partial "sections/contact.html" . }}
+{{ end }}
+

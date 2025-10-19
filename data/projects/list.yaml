@@ -1,0 +1,26 @@
+projects:
+  - title: Automated Software Delivery with GitLab CI/CD
+    image: /icons/projects/puzzle2.png
+    blurb: Architected and implemented a robust CI/CD pipeline using GitLab, enabling rapid, automated deployments across DEV and TEST environments. Focus on streamlined builds and consistent environments.
+    url: /projects/gitlab-cicd/
+
+  - title: Secure & Scalable API Framework (SAP-Inspired)
+    image: /icons/projects/puzzlejungle.png
+    blurb: Designed and built a modular API framework, inspired by SAP kernel principles, for secure authentication (tokens, SSO) and customer support services. Focus on high availability and efficient request handling.
+    url: /projects/secure-api-framework/
+
+  - title: Intelligent Create/ Read/ Update/ Delete API Generator
+    image: /icons/projects/table.png
+    blurb: Developed a sophisticated software tool for automated generation of FastAPI endpoints from database tables, including beyond basic CRUD operations. Focus on accelerating development and maintaining API consistency.
+    url: /projects/crud-generator/
+
+  - title: AI-Driven Frontend for Data Interaction
+    image: /icons/projects/puzzle.png
+    blurb: Crafted an interactive frontend using Next.js, leveraging AI for dynamic UI generation and seamless interaction with custom FastAPI endpoints. Focus on user experience and rapid prototyping.
+    url: /projects/ai-frontend/
+
+  - title: LLM Exploration for Oncology Insights
+    image: /icons/projects/ideas.png
+    blurb: Pioneering exploration into Large Language Models (LLMs) for oncology data analysis, focusing on foundational setup and identifying potential applications for medical insights.
+    url: /projects/llm-oncology/
+

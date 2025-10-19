@@ -1,0 +1,74 @@
+<section id="projects" class="py-5 bg-light" style="font-family: 'Inter', sans-serif;">
+  <div class="container">
+    <h2 class="text-success mb-5 text-center">Highlighted Projects</h2>
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+
+      <!-- Project Card 1 -->
+      <div class="col">
+        <a href="/projects/docker-kubernetes" class="text-decoration-none">
+          <div class="card h-100 shadow-sm">
+            <img src="/icons/projects/lounge.png" class="card-img-top" alt="Docker & Kubernetes">
+            <div class="card-body">
+              <h5 class="card-title text-success">Streamlined Deployment with Docker & Kubernetes</h5>
+              <p class="card-text">Architected a containerized development pipeline leveraging Docker and a 3-pod Kubernetes cluster (Dev, Test, Prod - potential AWS). Focused on achieving automated testing and seamless deployment workflows for rapid iteration and reliable releases.</p>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <!-- Project Card 2 -->
+      <div class="col">
+        <a href="/projects/fastapi-kernel" class="text-decoration-none">
+          <div class="card h-100 shadow-sm">
+            <img src="/icons/projects/puzzle.png" class="card-img-top" alt="FastAPI Kernel">
+            <div class="card-body">
+              <h5 class="card-title text-success">Secure FastAPI Kernel with Advanced User Management</h5>
+              <p class="card-text">Developed a custom FastAPI kernel incorporating key characteristics of the SAP system, emphasizing robust user registration, comprehensive authentication mechanisms (e.g., JWT), and foundational security principles for building enterprise-grade APIs.</p>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <!-- Project Card 3 -->
+      <div class="col">
+        <a href="/projects/crud-api" class="text-decoration-none">
+          <div class="card h-100 shadow-sm">
+            <img src="/icons/projects/puzzle2.png" class="card-img-top" alt="CRUD API Endpoints">
+            <div class="card-body">
+              <h5 class="card-title text-success">Foundational CRUD API Development</h5>
+              <p class="card-text">Designed and implemented a set of essential Create, Read, Update, and Delete (CRUD) API endpoints using FastAPI. These form the building blocks for data management and interaction within various applications.</p>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <!-- Project Card 4 -->
+      <div class="col">
+        <a href="/projects/api-integration-sample" class="text-decoration-none">
+          <div class="card h-100 shadow-sm">
+            <img src="/icons/projects/table.png" class="card-img-top" alt="Sample Application">
+            <div class="card-body">
+              <h5 class="card-title text-success">Demonstrating API Integration: A Simple Application</h5>
+              <p class="card-text">Built a practical sample application that effectively consumes the developed CRUD API endpoints. This showcases the real-world usability and functionality of the backend infrastructure in a user-focused context.</p>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <!-- Project Card 5 -->
+      <div class="col">
+        <a href="/projects/fullstack-nextjs" class="text-decoration-none">
+          <div class="card h-100 shadow-sm">
+            <img src="/icons/projects/ideas.png" class="card-img-top" alt="Full-Stack Integration">
+            <div class="card-body">
+              <h5 class="card-title text-success">Integrated Frontend with Next.js & Advanced Features</h5>
+              <p class="card-text">Seamlessly integrated the backend API with a user-friendly frontend designed using Next.js. Implemented features including robust error logging from the UI and a basic accounting module with paywall integration.</p>
+            </div>
+          </div>
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+

@@ -1,0 +1,96 @@
+
+<nav class="bg-white w-full z-50 top-0">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex justify-between items-center h-16">
+      <!-- Left spacer (was logo) -->
+      <div class="hidden lg:block w-40"></div>
+
+      <!-- Mobile Hamburger -->
+      <div class="lg:hidden">
+        <button id="menu-toggle" class="text-gray-700 focus:outline-none">
+          <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+      </div>
+
+      <!-- Main Menu -->
+      <div id="nav-menu" class="hidden lg:flex items-center space-x-6">
+        <ul class="flex space-x-6">
+          {{ range .Site.Menus.main }}
+            {{ if .HasChildren }}
+              <li class="relative group">
+                <a href="#" class="text-green-700 text-lg font-inter font-medium px-2 py-1 hover:underline">
+                  {{ .Name }}
+                </a>
+                <ul class="absolute hidden group-hover:block bg-white mt-2 w-48 z-50 shadow-md rounded border">
+                  {{ range .Children }}
+                    <li>
+                      <a class="block px-4 py-2 text-sm text-green-600 hover:bg-green-50 font-inter" href="{{ .URL }}">
+                        {{ .Name }}
+                      </a>
+                    </li>
+                  {{ end }}
+                </ul>
+              </li>
+            {{ else }}
+              <li>
+                <a href="{{ .URL }}" class="text-green-700 text-lg font-inter font-medium px-2 py-1 hover:underline">
+                  {{ .Name }}
+                </a>
+              </li>
+            {{ end }}
+          {{ end }}
+        </ul>
+
+        <!-- Contact Icon -->
+        <a href="/contact/" class="ml-4">
+          <img src="/images/envelope-closed.png" alt="Contact" class="h-6 w-auto hover:opacity-80" />
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="lg:hidden hidden px-4 pb-4">
+    <ul class="space-y-2">
+      {{ range .Site.Menus.main }}
+        <li>
+          <a href="{{ .URL }}" class="block text-green-700 text-lg font-inter font-medium px-4 py-2 hover:bg-green-100">
+            {{ .Name }}
+          </a>
+        </li>
+      {{ end }}
+      <li>
+        <a href="/contact/" class="flex items-center px-4 py-2 text-green-700 hover:bg-green-100">
+          <img src="/images/envelope-closed.png" alt="Email" class="h-5 w-auto mr-2" />
+          Contact
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <script>
+    document.getElementById('menu-toggle').addEventListener('click', function () {
+      document.getElementById('mobile-menu').classList.toggle('hidden');
+    });
+  </script>
+</nav>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

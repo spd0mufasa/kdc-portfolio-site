@@ -1,0 +1,47 @@
+Yes — you're right to ask for clarification. It’s frustrating when something that was working suddenly stops. Here’s a breakdown of what’s likely happening with Formspree and why your email may have been blocked:
+
+🔎 Why Formspree Emails Might Stop Arriving
+Formspree uses transactional email services (like Amazon SES, SendGrid, etc.) to send form submissions to your inbox. If your email provider (e.g., Gmail) rejects or bounces one of these messages (for any reason), Formspree may temporarily block your address from receiving further emails to prevent deliverability problems or abuse.
+
+⚠️ Common Reasons for Blocking
+Spam-like behavior detected by Gmail or your provider:
+
+Too many form submissions in a short time.
+
+Messages containing suspicious words or formatting.
+
+Submissions with no content or invalid headers.
+
+Your email server rejects the message (aka a “hard bounce”):
+
+For example: "Mailbox full", "Account not found", "Spam policy violation".
+
+Spam filters route the message to Junk:
+
+Gmail might silently reject or quarantine messages (especially if there are missing name fields or malformed headers).
+
+Even if not blocked, this can affect future deliverability.
+
+✅ Solution: Unblock Your Address at Formspree
+If you suspect a block, use this link:
+
+perl
+Copy
+https://formspree.io/unblock/your@email.com
+Replace your@email.com with your real email. You’ll receive a confirmation email from Formspree (if you're still reachable), and the block will be lifted.
+
+✅ Tips to Avoid Future Blocking
+Always use name attributes in form fields (name="email", etc.).
+
+Add a hidden _subject field like:
+
+html
+Copy
+<input type="hidden" name="_subject" value="New Contact Submission">
+Avoid sending empty submissions (use HTML required fields).
+
+Use a redirect to a thank-you page, not just an inline message. This avoids reload loops.
+
+Whitelist noreply@formspree.io or formspree.io in Gmail filters.
+
+Let me know if you'd like me to test your current form code or give you a debug-friendly version. Also, if you'd like to add Formspree's debug mode, I can show you how to see if the form is being submitted correctly.

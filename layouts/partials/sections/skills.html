@@ -1,0 +1,79 @@
+<section id="skills" class="py-5 bg-white" style="font-family: 'Inter', sans-serif;">
+  <div class="container">
+    <h2 class="text-success text-center mb-5">Professional Skills</h2>
+
+    <div class="d-flex flex-wrap justify-content-center gap-2 mb-4">
+      <button class="btn btn-outline-success filter-btn active" data-category="all">All</button>
+      {{ $skills := site.Data.skills.main.skills }}
+      {{ $categories := slice }}
+      {{ range $skills }}
+        {{ if not (in $categories .category) }}
+          {{ $categories = $categories | append .category }}
+        {{ end }}
+      {{ end }}
+      {{ range $categories }}
+        <button class="btn btn-outline-success filter-btn" data-category="{{ . }}">{{ . }}</button>
+      {{ end }}
+    </div>
+
+    <div id="skills-container" class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4" style="min-height: 240px;">
+      {{ range $skills }}
+        <div class="col skill-card" data-category="{{ .category }}">
+          <div class="card h-100 shadow-sm border border-success-subtle">
+            <div class="card-body d-flex flex-column">
+              <div class="d-flex justify-content-between align-items-start mb-2">
+                <div class="d-flex align-items-center">
+                  <img src="/icons/skills/{{ lower .name | urlize }}.svg" alt="{{ .name }} icon" class="me-2" style="width: 24px; height: 24px;" onerror="this.style.display='none'">
+                  <h5 class="card-title text-success mb-0">{{ .name }}</h5>
+                </div>
+                {{ if .detail }}
+                  <img src="/icons/skills/infoicon.png" alt="Info" data-bs-toggle="modal" data-bs-target="#detailModal-{{ urlize .name }}" style="cursor: pointer; width: 20px;" title="More info about {{ .name }}">
+                {{ end }}
+              </div>
+              <p class="card-subtitle text-muted small mb-2"><em>{{ .level }}</em></p>
+              <p class="card-text flex-grow-1">{{ .blurb }}</p>
+
+              {{ if .detail }}
+              <div class="modal fade" id="detailModal-{{ urlize .name }}" tabindex="-1" aria-labelledby="detailModalLabel-{{ urlize .name }}" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="detailModalLabel-{{ urlize .name }}">More about {{ .name }}</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      {{ .detail }}
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              {{ end }}
+            </div>
+          </div>
+        </div>
+      {{ end }}
+    </div>
+  </div>
+
+  <script>
+    document.querySelectorAll('.filter-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+
+        const category = btn.dataset.category;
+        document.querySelectorAll('.skill-card').forEach(card => {
+          if (category === 'all' || card.dataset.category === category) {
+            card.style.display = 'block';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      });
+    });
+  </script>
+</section>
+

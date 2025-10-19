@@ -1,0 +1,19 @@
+sections:
+  - name: "About"
+    id: "about"
+    enable: true
+    showOnNavbar: true
+    weight: 1
+
+  - name: "Skills"
+    id: "skills"
+    enable: true
+    showOnNavbar: true
+    weight: 2
+
+  - name: "Experience"
+    id: "experiences"
+    enable: true
+    showOnNavbar: true
+    weight: 3
+
