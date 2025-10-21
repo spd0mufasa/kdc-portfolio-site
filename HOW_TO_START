@@ -1,0 +1,11 @@
+
+HOW TO START:
+
+docker run --rm -p 1313:1313   -v /home/gitlabadmin/main/resources/portfolio:/src   -w /src   hugo-node:0.146.0   bash -c "npm install && hugo server -D --disableFastRender --bind 0.0.0.0 --baseURL http://kdcgitlab.internal:1313"
+ 2109  history | grep dock
+
+ACCESS FROM HERE : 
+http://kdcgitlab.internal:1313/
+
+OR ACCESS FROM HERE: 
+https://kdc-portfolio-site.pages.dev/#about   (installed at cloudflare )
