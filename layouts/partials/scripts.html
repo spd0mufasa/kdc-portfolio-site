@@ -46,7 +46,7 @@ Cloud-Automated DevOps Platform Builder
     const texts = ["a Multi-Tenant Platform Systems Architect", "a DevOps Integrated MLOps Architect and Builder", "an Enterprise Systems Resilience Specialist", "a Database Migration and Modernization Engineer", "a Mission-Critical Systems Recovery Architect" ];
     const el = document.getElementById("typed-text");
     const fadeDuration = 2500; // Duration of the fade effect in milliseconds
-    const delayBetween = 3000; // Delay before the next text fades in
+    const delayBetween = 4000; // Delay before the next text fades in
 
     let textIndex = 0;
 
@@ -62,7 +62,8 @@ Cloud-Automated DevOps Platform Builder
           // Move to the next text in the array
           textIndex = (textIndex + 1) % texts.length;
           // Set the timeout for the next change
-          setTimeout(changeText, delayBetween);
+          // setTimeout(changeText, delayBetween);
+	  setTimeout(changeText, fadeDuration + delayBetween);
         }, fadeDuration / 2); // Wait for half the fade duration before changing text
       }
     }
