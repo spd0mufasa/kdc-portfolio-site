@@ -16,7 +16,7 @@ projects:
 
   - title: HIPAA‑Compliant Medical Ingestion & Retrieval System 
     image: /icons/projects/puzzle.png
-    blurb: A secure, multi‑user platform for ingesting, structuring, and retrieving medical documents. Designed with strict HIPAA alignment, audit‑ready workflows, and agent‑safe APIs that allow controlled access to patient‑authorized data. 
+    blurb: A secure, multi‑user platform for ingesting, structuring, and retrieving medical documents. Designed with strict HIPAA alignment, audit‑ready workflows, and agent‑safe APIs. 
     url: /projects/web-hippa-docs/
 
   - title: LLM Exploration for Oncology Insights
