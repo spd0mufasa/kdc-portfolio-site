@@ -1,9 +1,9 @@
 ---
-title: "AI System Project"
-description: "A multi-user, HIPAA-aware medical document ingestion and retrieval system."
+title: "HIPAA-Compliant Medical Ingestion & Retrieval System"
+description: "A secure, multi-user platform for ingesting, structuring, and retrieving medical documents with strict HIPAA alignment."
 ---
 
-# AI System Project
+# HIPPA AI System Project
 
 This project is a backend-first, architecture-heavy system designed to ingest, process, and retrieve medical documents securely for multiple users. It functions like a personal “GitLab for medical records,” where each user has their own private space and agents can query their data through secure APIs.
 
@@ -15,5 +15,5 @@ The user interface layer — built last. This will allow users to upload documen
 ### 2. [API Ingestion Layer](./api-ingestion/)
 The API endpoints that support user management, ingestion, retrieval, and agent access. This is the contract between the backend system and any external clients or agents.
 
-### 3. [AI Ingestion & Retrieval Engine](./ai-ingestion/)
+### 3. [HIPPA AI Ingestion & Retrieval Engine](./ai-ingestion/)
 The core engineering work: architecture, ingestion pipeline, vector database, services, containers, metadata schema, and multi-environment design.
