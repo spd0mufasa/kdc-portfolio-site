@@ -14,10 +14,10 @@ projects:
     blurb: Developed a sophisticated software tool for automated generation of FastAPI endpoints from database tables, including beyond basic CRUD operations. Focus on accelerating development and maintaining API consistency.
     url: /projects/crud-generator/
 
-  - title: AI-Driven Frontend for Data Interaction
+  - title: HIPAA‑Compliant Medical Ingestion & Retrieval System 
     image: /icons/projects/puzzle.png
-    blurb: Crafted an interactive frontend using Next.js, leveraging AI for dynamic UI generation and seamless interaction with custom FastAPI endpoints. Focus on user experience and rapid prototyping.
-    url: /projects/ai-frontend/
+    blurb: A secure, multi‑user platform for ingesting, structuring, and retrieving medical documents. Designed with strict HIPAA alignment, audit‑ready workflows, and agent‑safe APIs that allow controlled access to patient‑authorized data. 
+    url: /projects/web-hippa-docs/
 
   - title: LLM Exploration for Oncology Insights
     image: /icons/projects/ideas.png
