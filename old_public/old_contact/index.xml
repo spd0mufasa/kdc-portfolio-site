@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Old_contacts on K. Claiborn</title>
+    <link>http://kdcgitlab.internal:1313/old_contact/</link>
+    <description>Recent content in Old_contacts on K. Claiborn</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 11 May 2025 22:30:00 -0500</lastBuildDate><atom:link href="http://kdcgitlab.internal:1313/old_contact/index.xml" rel="self" type="application/rss+xml" /><item>
+      <title>Contact Me</title>
+      <link>http://kdcgitlab.internal:1313/contact/</link>
+      <pubDate>Sun, 11 May 2025 22:30:00 -0500</pubDate>
+      
+      <guid>http://kdcgitlab.internal:1313/contact/</guid>
+      <description>&lt;p&gt;Have a question, a project idea, or just want to say hello? Feel free to reach out using the form below!&lt;/p&gt;</description>
+    </item>
+    
+    
+  </channel>
+</rss>

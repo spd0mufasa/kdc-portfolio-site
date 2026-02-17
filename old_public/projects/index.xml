@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Projects on K. Claiborn</title>
+    <link>http://kdcgitlab.internal:1313/projects/</link>
+    <description>Recent content in Projects on K. Claiborn</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 20 May 2025 20:38:32 +0000</lastBuildDate><atom:link href="http://kdcgitlab.internal:1313/projects/index.xml" rel="self" type="application/rss+xml" /><item>
+      <title>secure-api-framework</title>
+      <link>http://kdcgitlab.internal:1313/projects/secure-api-framework/</link>
+      <pubDate>Tue, 20 May 2025 20:38:32 +0000</pubDate>
+      
+      <guid>http://kdcgitlab.internal:1313/projects/secure-api-framework/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ai-frontend</title>
+      <link>http://kdcgitlab.internal:1313/projects/ai-frontend/</link>
+      <pubDate>Tue, 20 May 2025 20:34:54 +0000</pubDate>
+      
+      <guid>http://kdcgitlab.internal:1313/projects/ai-frontend/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>crud-generator</title>
+      <link>http://kdcgitlab.internal:1313/projects/crud-generator/</link>
+      <pubDate>Tue, 20 May 2025 20:34:54 +0000</pubDate>
+      
+      <guid>http://kdcgitlab.internal:1313/projects/crud-generator/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>gitlab-cicd</title>
+      <link>http://kdcgitlab.internal:1313/projects/gitlab-cicd/</link>
+      <pubDate>Tue, 20 May 2025 20:34:54 +0000</pubDate>
+      
+      <guid>http://kdcgitlab.internal:1313/projects/gitlab-cicd/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>llm-oncology</title>
+      <link>http://kdcgitlab.internal:1313/projects/llm-oncology/</link>
+      <pubDate>Tue, 20 May 2025 20:34:54 +0000</pubDate>
+      
+      <guid>http://kdcgitlab.internal:1313/projects/llm-oncology/</guid>
+      <description></description>
+    </item>
+    
+    
+  </channel>
+</rss>

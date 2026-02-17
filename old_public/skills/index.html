@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>K. Claiborn</title>
+
+  
+  
+  <link rel="stylesheet" href="/css/main.min.6f34bc9245bf0099bc38454aa5584ab465e6fc069c3f8115c48e532aad1dec56.css" integrity="sha256-bzS8kkW/AJm8OEVKpVhKtGXm/AacP4EVxI5TKq0d7FY=" />
+
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+</head>
+
+<body>
+  
+<nav  class="bg-white w-full z-50 top-0 border-none">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex justify-between items-center h-16">
+      
+      
+      <div class="hidden lg:block w-40"></div>
+
+      
+      <div class="lg:hidden">
+        <button id="menu-toggle" class="text-gray-700 focus:outline-none">
+          <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+      </div>
+
+      
+      <div id="nav-menu" class="hidden lg:flex items-center space-x-6">
+        <ul class="flex space-x-6 items-center">
+          
+            
+              <li>
+                <a href="/" class="text-green-700 text-xl font-medium px-2 py-1 no-underline hover:underline flex items-center">
+                  Home
+                </a>
+              </li>
+            
+          
+            
+              <li>
+                <a href="/#about" class="text-green-700 text-xl font-medium px-2 py-1 no-underline hover:underline flex items-center">
+                  About
+                </a>
+              </li>
+            
+          
+            
+              <li>
+                <a href="/#skills" class="text-green-700 text-xl font-medium px-2 py-1 no-underline hover:underline flex items-center">
+                  Skills
+                </a>
+              </li>
+            
+          
+            
+              <li>
+                <a href="https://www.linkedin.com/in/karen-c-0b52026/" class="text-green-700 text-xl font-medium px-2 py-1 no-underline hover:underline flex items-center">
+                  Experience
+                </a>
+              </li>
+            
+          
+            
+              <li>
+                <a href="/resume/" class="text-green-700 text-xl font-medium px-2 py-1 no-underline hover:underline flex items-center">
+                  Resume
+                </a>
+              </li>
+            
+          
+            
+              <li class="relative group">
+                <a href="#" class="text-green-700 text-xl font-medium px-2 py-1 no-underline hover:underline flex items-center">
+                  Projects
+                  <svg class="w-4 h-4 ml-1 text-green-700" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 10.92l3.71-3.7a.75.75 0 011.06 1.06l-4.24 4.25a.75.75 0 01-1.06 0L5.23 8.27a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
+                  </svg>
+                </a>
+                <ul class="absolute hidden group-hover:block bg-white mt-2 w-48 z-50 shadow-md rounded border">
+                  
+                    <li>
+                      <a class="block px-4 py-2 text-sm text-green-600 hover:bg-green-50" href="/projects/ai/">
+                        AI Development
+                      </a>
+                    </li>
+                  
+                    <li>
+                      <a class="block px-4 py-2 text-sm text-green-600 hover:bg-green-50" href="/projects/crud/">
+                        CRUD Generator
+                      </a>
+                    </li>
+                  
+                    <li>
+                      <a class="block px-4 py-2 text-sm text-green-600 hover:bg-green-50" href="/projects/auth/">
+                        Fast API Authorizations
+                      </a>
+                    </li>
+                  
+                </ul>
+              </li>
+            
+          
+        </ul>
+
+        
+        
+
+        
+        <a href="https://www.linkedin.com/in/karen-c-0b52026/"
+           target="_blank" rel="noopener noreferrer"
+           class="ml-4 flex items-center" title="LinkedIn">
+          <img src="/images/linkedin.svg" alt="LinkedIn"
+               class="h-6 w-6 hover:opacity-80 transition-opacity" />
+        </a>
+      </div>
+    </div>
+  </div>
+
+  
+  <div id="mobile-menu" class="lg:hidden hidden px-4 pb-4">
+    <ul class="space-y-2">
+      
+        <li>
+          <a href="/" class="block text-green-700 text-lg font-medium px-4 py-2 hover:bg-green-100">
+            Home
+          </a>
+        </li>
+      
+        <li>
+          <a href="/#about" class="block text-green-700 text-lg font-medium px-4 py-2 hover:bg-green-100">
+            About
+          </a>
+        </li>
+      
+        <li>
+          <a href="/#skills" class="block text-green-700 text-lg font-medium px-4 py-2 hover:bg-green-100">
+            Skills
+          </a>
+        </li>
+      
+        <li>
+          <a href="https://www.linkedin.com/in/karen-c-0b52026/" class="block text-green-700 text-lg font-medium px-4 py-2 hover:bg-green-100">
+            Experience
+          </a>
+        </li>
+      
+        <li>
+          <a href="/resume/" class="block text-green-700 text-lg font-medium px-4 py-2 hover:bg-green-100">
+            Resume
+          </a>
+        </li>
+      
+        <li>
+          <a href="#projects" class="block text-green-700 text-lg font-medium px-4 py-2 hover:bg-green-100">
+            Projects
+          </a>
+        </li>
+      
+
+      
+      <li>
+        <a href="/contact/" class="flex items-center px-4 py-2 text-green-700 hover:bg-green-100">
+          <img src="/images/envelope-closed.png" alt="Email" class="h-5 w-5 mr-2" />
+          Contact
+        </a>
+      </li>
+
+      
+      <li>
+        
+
+
+<a href="https://www.linkedin.com/in/karen-c-0b52026/" target="_blank" rel="noopener noreferrer" class="flex items-center">
+  <img src="/images/linkedin.svg" alt="LinkedIn"
+       class="h-12 w-auto hover:opacity-80 transition-opacity align-middle" />
+</a>
+
+
+
+      </li>
+    </ul>
+  </div>
+
+  <script>
+    document.getElementById('menu-toggle').addEventListener('click', function () {
+      document.getElementById('mobile-menu').classList.toggle('hidden');
+    });
+  </script>
+</nav>
+
+
+
+
+
+  <main>
+    
+<section class="container mx-auto px-4 py-10">
+  <h1 class="text-4xl font-bold text-center text-green-700 mb-8">Professional Skills</h1>
+
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+    
+      <div class="bg-white shadow-md rounded-lg p-6 hover:shadow-lg transition-shadow border border-green-100">
+        <h2 class="text-xl font-semibold text-green-700 mb-2">Python</h2>
+        <p class="text-sm text-gray-600 italic mb-2">Expert</p>
+        <p class="text-gray-800 text-base">Extensive use in backend APIs, FastAPI, data processing, and automation.</p>
+      </div>
+    
+      <div class="bg-white shadow-md rounded-lg p-6 hover:shadow-lg transition-shadow border border-green-100">
+        <h2 class="text-xl font-semibold text-green-700 mb-2">FastAPI</h2>
+        <p class="text-sm text-gray-600 italic mb-2">Expert</p>
+        <p class="text-gray-800 text-base">Used for designing multilingual CRUD API endpoints with production deployments.</p>
+      </div>
+    
+      <div class="bg-white shadow-md rounded-lg p-6 hover:shadow-lg transition-shadow border border-green-100">
+        <h2 class="text-xl font-semibold text-green-700 mb-2">Docker</h2>
+        <p class="text-sm text-gray-600 italic mb-2">Expert</p>
+        <p class="text-gray-800 text-base">Built and deployed containerized applications; managed volumes and Oracle DB integration.</p>
+      </div>
+    
+      <div class="bg-white shadow-md rounded-lg p-6 hover:shadow-lg transition-shadow border border-green-100">
+        <h2 class="text-xl font-semibold text-green-700 mb-2">GitLab</h2>
+        <p class="text-sm text-gray-600 italic mb-2">Expert</p>
+        <p class="text-gray-800 text-base">Managed DEV/TEST/PROD environments and CI/CD pipelines with GitLab Runner.</p>
+      </div>
+    
+      <div class="bg-white shadow-md rounded-lg p-6 hover:shadow-lg transition-shadow border border-green-100">
+        <h2 class="text-xl font-semibold text-green-700 mb-2">Oracle</h2>
+        <p class="text-sm text-gray-600 italic mb-2">Expert</p>
+        <p class="text-gray-800 text-base">Used extensively with SAP BW, backend development, performance tuning, and data migration.</p>
+      </div>
+    
+      <div class="bg-white shadow-md rounded-lg p-6 hover:shadow-lg transition-shadow border border-green-100">
+        <h2 class="text-xl font-semibold text-green-700 mb-2">PostgreSQL</h2>
+        <p class="text-sm text-gray-600 italic mb-2">Proficient</p>
+        <p class="text-gray-800 text-base">Handled data storage for REST APIs and development/testing environments.</p>
+      </div>
+    
+      <div class="bg-white shadow-md rounded-lg p-6 hover:shadow-lg transition-shadow border border-green-100">
+        <h2 class="text-xl font-semibold text-green-700 mb-2">Jenkins</h2>
+        <p class="text-sm text-gray-600 italic mb-2">Proficient</p>
+        <p class="text-gray-800 text-base">Automated Docker image builds and deployments across staging environments.</p>
+      </div>
+    
+      <div class="bg-white shadow-md rounded-lg p-6 hover:shadow-lg transition-shadow border border-green-100">
+        <h2 class="text-xl font-semibold text-green-700 mb-2">AWS S3</h2>
+        <p class="text-sm text-gray-600 italic mb-2">Proficient</p>
+        <p class="text-gray-800 text-base">Used for encrypted backup storage of GitLab and application data.</p>
+      </div>
+    
+      <div class="bg-white shadow-md rounded-lg p-6 hover:shadow-lg transition-shadow border border-green-100">
+        <h2 class="text-xl font-semibold text-green-700 mb-2">NEXT.JS</h2>
+        <p class="text-sm text-gray-600 italic mb-2">Intermediate</p>
+        <p class="text-gray-800 text-base">Used alongside backend services in full-stack prototypes with generative AI integrations.</p>
+      </div>
+    
+      <div class="bg-white shadow-md rounded-lg p-6 hover:shadow-lg transition-shadow border border-green-100">
+        <h2 class="text-xl font-semibold text-green-700 mb-2">Flask</h2>
+        <p class="text-sm text-gray-600 italic mb-2">Intermediate</p>
+        <p class="text-gray-800 text-base">Deployed lightweight TradingView alert services for crypto automation.</p>
+      </div>
+    
+      <div class="bg-white shadow-md rounded-lg p-6 hover:shadow-lg transition-shadow border border-green-100">
+        <h2 class="text-xl font-semibold text-green-700 mb-2">Git</h2>
+        <p class="text-sm text-gray-600 italic mb-2">Expert</p>
+        <p class="text-gray-800 text-base">Version control across numerous solo and team projects, integrated with GitLab.</p>
+      </div>
+    
+      <div class="bg-white shadow-md rounded-lg p-6 hover:shadow-lg transition-shadow border border-green-100">
+        <h2 class="text-xl font-semibold text-green-700 mb-2">Shell Scripting</h2>
+        <p class="text-sm text-gray-600 italic mb-2">Expert</p>
+        <p class="text-gray-800 text-base">Automated tasks, log rotations, environment setups, and backups.</p>
+      </div>
+    
+      <div class="bg-white shadow-md rounded-lg p-6 hover:shadow-lg transition-shadow border border-green-100">
+        <h2 class="text-xl font-semibold text-green-700 mb-2">SQL</h2>
+        <p class="text-sm text-gray-600 italic mb-2">Expert</p>
+        <p class="text-gray-800 text-base">Heavy use in data extraction, migration, and optimization across multiple DB engines.</p>
+      </div>
+    
+      <div class="bg-white shadow-md rounded-lg p-6 hover:shadow-lg transition-shadow border border-green-100">
+        <h2 class="text-xl font-semibold text-green-700 mb-2">SAP BW</h2>
+        <p class="text-sm text-gray-600 italic mb-2">Expert</p>
+        <p class="text-gray-800 text-base">Core contributor on the development team; performance tuning and data integration.</p>
+      </div>
+    
+      <div class="bg-white shadow-md rounded-lg p-6 hover:shadow-lg transition-shadow border border-green-100">
+        <h2 class="text-xl font-semibold text-green-700 mb-2">Linux</h2>
+        <p class="text-sm text-gray-600 italic mb-2">Expert</p>
+        <p class="text-gray-800 text-base">Primary development and deployment environment, including remote servers and Docker hosts.</p>
+      </div>
+    
+      <div class="bg-white shadow-md rounded-lg p-6 hover:shadow-lg transition-shadow border border-green-100">
+        <h2 class="text-xl font-semibold text-green-700 mb-2">CI/CD</h2>
+        <p class="text-sm text-gray-600 italic mb-2">Proficient</p>
+        <p class="text-gray-800 text-base">Built pipelines for DEV, TEST, STAGE, and PROD releases using GitLab and Jenkins.</p>
+      </div>
+    
+      <div class="bg-white shadow-md rounded-lg p-6 hover:shadow-lg transition-shadow border border-green-100">
+        <h2 class="text-xl font-semibold text-green-700 mb-2">TradingView</h2>
+        <p class="text-sm text-gray-600 italic mb-2">Proficient</p>
+        <p class="text-gray-800 text-base">Integrated webhook alerts for automated trading logic with Binance and Coinbase.</p>
+      </div>
+    
+      <div class="bg-white shadow-md rounded-lg p-6 hover:shadow-lg transition-shadow border border-green-100">
+        <h2 class="text-xl font-semibold text-green-700 mb-2">SQLAlchemy</h2>
+        <p class="text-sm text-gray-600 italic mb-2">Proficient</p>
+        <p class="text-gray-800 text-base">Used in custom ORM layer for backend APIs and schema mapping.</p>
+      </div>
+    
+      <div class="bg-white shadow-md rounded-lg p-6 hover:shadow-lg transition-shadow border border-green-100">
+        <h2 class="text-xl font-semibold text-green-700 mb-2">Jupyter</h2>
+        <p class="text-sm text-gray-600 italic mb-2">Intermediate</p>
+        <p class="text-gray-800 text-base">Used for data analysis and testing of algorithms and trading signals.</p>
+      </div>
+    
+      <div class="bg-white shadow-md rounded-lg p-6 hover:shadow-lg transition-shadow border border-green-100">
+        <h2 class="text-xl font-semibold text-green-700 mb-2">Hypercorn</h2>
+        <p class="text-sm text-gray-600 italic mb-2">Intermediate</p>
+        <p class="text-gray-800 text-base">Used for production-grade ASGI serving of FastAPI apps.</p>
+      </div>
+    
+  </div>
+</section>
+
+  </main>
+
+  
+<footer class="bg-dark text-white py-4">
+  <div class="container text-center">
+    <div class="text-white" style="font-size: 1.1em;">
+      &copy; 2025 KDC. All rights reserved.
+    </div>
+  </div>
+</footer>
+
+
+  <script src="/application.0c2323cd5876a60e6c29cf6d11e7b314f7d5bd48268b24fa533844185960cc65.js" integrity="sha256-DCMjzVh2pg5sKc9tEeezFPfVvUgmiyT6UzhEGFlgzGU=" defer></script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<style>
+  #typed-text {
+    opacity: 0;
+    transition: opacity 2s ease-in-out;  
+  }
+  #typed-text.fading-in {
+    opacity: 1;
+  }
+
+  #typed-text {
+    opacity: 0;
+    color: red;  
+    transition: opacity 1s ease-in-out;  
+  }
+  #typed-text.fading-in {
+    opacity: 1;
+  }
+</style>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const texts = ["a Backend Developer", "an API Developer", "an AI Ethusiast", "a PostgreSQL DBA", "a Software Developer", "an Oracle DBA"];
+    const el = document.getElementById("typed-text");
+    const fadeDuration = 2500; 
+    const delayBetween = 3000; 
+
+    let textIndex = 0;
+
+    function changeText() {
+      if (el) {
+        
+        el.classList.remove("fading-in");
+        setTimeout(() => {
+          
+          el.textContent = texts[textIndex];
+          
+          el.classList.add("fading-in");
+          
+          textIndex = (textIndex + 1) % texts.length;
+          
+          setTimeout(changeText, delayBetween);
+        }, fadeDuration / 2); 
+      }
+    }
+
+    if (el) {
+      
+      el.textContent = texts[0];
+      el.classList.add("fading-in");
+      setTimeout(changeText, delayBetween);
+    }
+  });
+</script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
